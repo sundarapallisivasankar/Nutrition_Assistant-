@@ -1,0 +1,14 @@
+{
+  "name": "nutrition-assistant-root",
+  "version": "1.0.0",
+  "description": "Root configuration for full-stack Nutrition Assistant application",
+  "type": "module",
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client --legacy-peer-deps",
+    "dev-server": "npm run dev --prefix server",
+    "dev-client": "npm run dev --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test-units": "node tests/calculations.test.js",
+    "test-apis": "node tests/api.test.js"
+  }
+}
